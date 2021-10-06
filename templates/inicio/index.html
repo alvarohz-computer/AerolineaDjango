@@ -1,0 +1,17 @@
+{% extends 'layout/base.html' %}
+
+{% block titulo %}
+mi plantilla
+{% endblock titulo %}
+
+{% block contenido %}
+
+    <h1>Hola template view</h1>
+    {{msg}}
+    <br>
+    {% for  n in  Nombres %}
+        <p>{{n|upper}}</p>
+    {% endfor %}
+
+{% endblock contenido  %}
+
